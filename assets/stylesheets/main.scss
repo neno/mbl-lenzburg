@@ -8,106 +8,106 @@
  * SETTINGS
  */
 
-@import '../assets/stylesheets/settings/_settings.font-size.css';
-@import '../assets/stylesheets/settings/_settings.font-face.css';
-@import '../assets/stylesheets/settings/_settings.font-style.css';
-@import '../assets/stylesheets/settings/_settings.colors.css';
-@import '../assets/stylesheets/settings/_settings.wrapper.css';
-@import '../assets/stylesheets/settings/_settings.spacing.css';
-@import '../assets/stylesheets/settings/_settings.media-queries.css';
+@import '~assets/stylesheets/settings/_settings.font-size.scss';
+@import '~assets/stylesheets/settings/_settings.font-face.scss';
+@import '~assets/stylesheets/settings/_settings.font-style.scss';
+@import '~assets/stylesheets/settings/_settings.colors.scss';
+@import '~assets/stylesheets/settings/_settings.wrapper.scss';
+@import '~assets/stylesheets/settings/_settings.spacing.scss';
+@import '~assets/stylesheets/settings/_settings.media-queries.scss';
 
 /* forms settings */
-@import '../assets/stylesheets/forms/_settings.forms.css';
+@import '~assets/stylesheets/forms/_settings.forms.scss';
 
 /* icons settings */
-@import '../assets/stylesheets/icons/_settings.icons.css';
+@import '~assets/stylesheets/icons/_settings.icons.scss';
 
 /**
   * GENERIC
   */
 
-// @import 'sanitize.css/sanitize.css';
-@import '../assets/stylesheets/generic/_generic.reset.css';
-@import '../assets/stylesheets/generic/_generic.shared.css';
-@import '../assets/stylesheets/forms/_forms.reset.css';
+// @import 'sanitize.scss/sanitize.scss';
+@import '~assets/stylesheets/generic/_generic.reset.scss';
+@import '~assets/stylesheets/generic/_generic.shared.scss';
+@import '~assets/stylesheets/forms/_forms.reset.scss';
 
 /**
   * ELEMENTS
   */
 
-@import '../assets/stylesheets/elements/_elements.page.css';
-@import '../assets/stylesheets/elements/_elements.headings.css';
-@import '../assets/stylesheets/elements/_elements.anchors.css';
-@import '../assets/stylesheets/elements/_elements.images.css';
-@import '../assets/stylesheets/elements/_elements.figures.css';
-@import '../assets/stylesheets/elements/_elements.tables.css';
-@import '../assets/stylesheets/elements/_elements.spacing.css';
+@import '~assets/stylesheets/elements/_elements.page.scss';
+@import '~assets/stylesheets/elements/_elements.headings.scss';
+@import '~assets/stylesheets/elements/_elements.anchors.scss';
+@import '~assets/stylesheets/elements/_elements.images.scss';
+@import '~assets/stylesheets/elements/_elements.figures.scss';
+@import '~assets/stylesheets/elements/_elements.tables.scss';
+@import '~assets/stylesheets/elements/_elements.spacing.scss';
 
 /**
   * OBJECTS
   */
 
-@import '../assets/stylesheets/objects/_objects.wrapper.css';
-@import '../assets/stylesheets/objects/_objects.box.css';
-@import '../assets/stylesheets/objects/_objects.layout.css';
-@import '../assets/stylesheets/objects/_objects.links.css';
-@import '../assets/stylesheets/objects/_objects.list-bare.css';
-@import '../assets/stylesheets/objects/_objects.list-inline.css';
-@import '../assets/stylesheets/objects/_objects.list-delimited.css';
-@import '../assets/stylesheets/objects/_objects.list-documents.css';
-@import '../assets/stylesheets/objects/_objects.media.css';
+@import '~assets/stylesheets/objects/_objects.wrapper.scss';
+@import '~assets/stylesheets/objects/_objects.box.scss';
+@import '~assets/stylesheets/objects/_objects.layout.scss';
+@import '~assets/stylesheets/objects/_objects.links.scss';
+@import '~assets/stylesheets/objects/_objects.list-bare.scss';
+@import '~assets/stylesheets/objects/_objects.list-inline.scss';
+@import '~assets/stylesheets/objects/_objects.list-delimited.scss';
+@import '~assets/stylesheets/objects/_objects.list-documents.scss';
+@import '~assets/stylesheets/objects/_objects.media.scss';
 
 /*
- @import "../assets/stylesheets/objects/_objects.modal.css";
- @import "../assets/stylesheets/objects/_objects.pack.css";
- @import "../assets/stylesheets/objects/_objects.flag.css";
- @import "../assets/stylesheets/objects/_objects.block.css";
- @import "../assets/stylesheets/objects/_objects.ratio.css";
- @import "../assets/stylesheets/objects/_objects.crop.css";
- @import "../assets/stylesheets/objects/_objects.tables.css";
+ @import "~assets/stylesheets/objects/_objects.modal.scss";
+ @import "~assets/stylesheets/objects/_objects.pack.scss";
+ @import "~assets/stylesheets/objects/_objects.flag.scss";
+ @import "~assets/stylesheets/objects/_objects.block.scss";
+ @import "~assets/stylesheets/objects/_objects.ratio.scss";
+ @import "~assets/stylesheets/objects/_objects.crop.scss";
+ @import "~assets/stylesheets/objects/_objects.tables.scss";
  */
 
 /**
   * COMPONENTS
   */
-@import '../assets/stylesheets/components/_components.banner.css';
-@import '../assets/stylesheets/components/_components.nav-list.css';
-@import '../assets/stylesheets/components/_components.nav-link.css';
-@import '../assets/stylesheets/components/_components.site-header.css';
-@import '../assets/stylesheets/components/_components.site-footer.css';
-@import '../assets/stylesheets/components/_components.article.css';
-@import '../assets/stylesheets/components/_components.teaser.css';
-@import '../assets/stylesheets/components/_components.menu.css';
-@import '../assets/stylesheets/components/_components.modal.css';
-@import '../assets/stylesheets/components/_components.modal-nav-list.css';
-@import '../assets/stylesheets/components/_components.modal-nav-link.css';
-@import '../assets/stylesheets/components/_components.documents.css';
-@import '../assets/stylesheets/components/_components.buttons.css';
+@import '~assets/stylesheets/components/_components.banner.scss';
+@import '~assets/stylesheets/components/_components.nav-list.scss';
+@import '~assets/stylesheets/components/_components.nav-link.scss';
+@import '~assets/stylesheets/components/_components.site-header.scss';
+@import '~assets/stylesheets/components/_components.site-footer.scss';
+@import '~assets/stylesheets/components/_components.article.scss';
+@import '~assets/stylesheets/components/_components.teaser.scss';
+@import '~assets/stylesheets/components/_components.menu.scss';
+@import '~assets/stylesheets/components/_components.modal.scss';
+@import '~assets/stylesheets/components/_components.modal-nav-list.scss';
+@import '~assets/stylesheets/components/_components.modal-nav-link.scss';
+@import '~assets/stylesheets/components/_components.documents.scss';
+@import '~assets/stylesheets/components/_components.buttons.scss';
 
 /**
   * ICONS
   */
 
-@import '../assets/stylesheets/icons/_icons.hamburger.css';
-@import '../assets/stylesheets/icons/_icons.document.css';
+@import '~assets/stylesheets/icons/_icons.hamburger.scss';
+@import '~assets/stylesheets/icons/_icons.document.scss';
 
 /**
   * FORMS
   */
-@import '../assets/stylesheets/forms/_forms.layout.css';
-@import '../assets/stylesheets/forms/_forms.input-wrapper.css';
-@import '../assets/stylesheets/forms/_forms.input-fields.css';
-@import '../assets/stylesheets/forms/_forms.radio-buttons.css';
-@import '../assets/stylesheets/forms/_forms.select.css';
+@import '~assets/stylesheets/forms/_forms.layout.scss';
+@import '~assets/stylesheets/forms/_forms.input-wrapper.scss';
+@import '~assets/stylesheets/forms/_forms.input-fields.scss';
+@import '~assets/stylesheets/forms/_forms.radio-buttons.scss';
+@import '~assets/stylesheets/forms/_forms.select.scss';
 
 /**
   * UTILITIES
   */
 
-@import '../assets/stylesheets/utilities/_utilities.debug.css';
-@import '../assets/stylesheets/utilities/_utilities.hidden.css';
-@import '../assets/stylesheets/utilities/_utilities.font-style.css';
-@import '../assets/stylesheets/utilities/_utilities.spacing.css';
-@import '../assets/stylesheets/utilities/_utilities.colors.css';
-@import '../assets/stylesheets/utilities/_utilities.overwrite.css';
-@import '../assets/stylesheets/utilities/_utilities.wysiwyg.css';
+@import '~assets/stylesheets/utilities/_utilities.debug.scss';
+@import '~assets/stylesheets/utilities/_utilities.hidden.scss';
+@import '~assets/stylesheets/utilities/_utilities.font-style.scss';
+@import '~assets/stylesheets/utilities/_utilities.spacing.scss';
+@import '~assets/stylesheets/utilities/_utilities.colors.scss';
+@import '~assets/stylesheets/utilities/_utilities.overwrite.scss';
+@import '~assets/stylesheets/utilities/_utilities.wysiwyg.scss';
