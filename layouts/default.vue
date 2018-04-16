@@ -155,4 +155,8 @@ export default {
     }
   }
 }
+
+figure.c-banner__visual {
+  margin-top: 0;
+}
 </style>

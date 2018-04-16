@@ -17,7 +17,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#d66d3c' },
 
   modules: [
     [
@@ -27,18 +27,10 @@ module.exports = {
       }
     ]
   ],
-
-  // plugins: [{ src: '~plugins/vee-validate.js' }],
   /*
   ** Build configuration
   */
   build: {
-    // postcss: [
-    //   require('lost')
-    //   // require('postcss-nested')(),
-    //   // require('postcss-responsive-type')(),
-    //   // require('postcss-hexrgba')()
-    // ],
     // vendor: ['vee-validate'],
     /*
     ** Run ESLint on save
