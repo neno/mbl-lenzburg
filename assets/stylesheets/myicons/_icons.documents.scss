@@ -1,0 +1,45 @@
+/**
+ * -------------------------------------------------------------------
+ * #DOCUMENT
+ * -------------------------------------------------------------------
+ */
+
+.i-document {
+  lost-utility: clearfix;
+  float: left;
+  width: var(--icon-document-width);
+  height: var(--icon-document-height);
+  margin-right: var(--spacing-unit-tiny);
+  clip-path: polygon(0 0, 65% 0, 100% 35%, 100% 100%, 0 100%);
+  background: var(--gray);
+  transition: background-color 0.7s ease-out;
+}
+
+.o-list-documents__item:hover .i-document {
+  background: var(--darkgray);
+  transition: background-color 0.3s ease-in;
+}
+
+.i-document::before {
+  content: '';
+  display: block;
+  width: var(--icon-document-inner-width);
+  height: var(--icon-document-inner-height);
+  margin-top: calc(3 * var(--icon-document-space));
+  margin-left: var(--icon-document-space);
+  margin-bottom: var(--icon-document-space);
+  border-top: var(--icon-document-border) solid var(--white);
+  border-bottom: var(--icon-document-border) solid var(--white);
+}
+
+.i-document::after {
+  display: block;
+  content: '';
+  width: var(--icon-document-inner-width);
+  margin-left: var(--icon-document-space);
+  border-top: var(--icon-document-border) solid var(--white);
+}
+
+.i-document__link {
+  padding-top: var(--icon-document-space);
+}

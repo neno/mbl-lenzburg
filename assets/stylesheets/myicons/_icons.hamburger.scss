@@ -1,0 +1,121 @@
+/**
+ * -------------------------------------------------------------------
+ * #HAMBURGER
+ * -------------------------------------------------------------------
+ */
+@custom-selector :--enter :hover, :focus, :active;
+
+.i-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: var(--icon-width);
+  height: var(--icon-height);
+  font-size: 0;
+  text-indent: -9999px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.i-hamburger:focus {
+  outline: none;
+}
+
+.i-hamburger span {
+  display: block;
+  position: absolute;
+  top: calc((var(--icon-height) / 2) - (var(--icon-bun-thickness) / 2));
+  left: var(--icon-padding);
+  right: var(--icon-padding);
+  height: var(--icon-bun-thickness);
+  background: var(--white);
+}
+
+.i-hamburger span::before,
+.i-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: var(--icon-bun-thickness);
+  background: var(--white);
+  content: '';
+}
+
+.i-hamburger span::before {
+  top: calc(0 - var(--icon-bun-thickness) - var(--icon-bun-space));
+}
+
+.i-hamburger span::after {
+  bottom: calc(0 - var(--icon-bun-thickness) - var(--icon-bun-space));
+}
+
+/**
+  * Style 2
+  *
+  * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+  * down to center and transform into an "x".
+  */
+
+.i-hamburger--htx {
+  background-color: var(--hamburger-bg);
+}
+
+.i-hamburger--htx:--enter {
+  background-color: var(--hamburger-bg-enter);
+}
+
+.i-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.i-hamburger--htx span::before,
+.i-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.i-hamburger--htx span::before {
+  transition-property: top, transform;
+  -webkit-transition-property: top, -webkit-transform;
+}
+
+.i-hamburger--htx span::after {
+  transition-property: bottom, transform;
+  -webkit-transition-property: bottom, -webkit-transform;
+}
+
+/* active state, i.e. menu open */
+
+.i-hamburger--htx.is-active {
+  background-color: var(--hamburger-bg-active);
+}
+
+.i-hamburger--htx.is-active:--enter {
+  background-color: var(--hamburger-bg-enter-active);
+}
+
+.i-hamburger--htx.is-active span {
+  background: none;
+}
+
+.i-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.i-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.i-hamburger--htx.is-active span::before,
+.i-hamburger--htx.is-active span::after {
+  background-color: var(--white);
+  transition-delay: 0s, 0.3s;
+}
