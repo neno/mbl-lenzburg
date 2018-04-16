@@ -1,0 +1,30 @@
+/**
+ * ------------------------------------------------------------------
+ * #SPACING
+ * ------------------------------------------------------------------
+ */
+
+h3,
+h4,
+h5,
+h6,
+address,
+blockquote,
+pre,
+hr,
+table,
+fieldset {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-bottom: var(--spacing-unit-small);
+}
+
+dl {
+  margin-left: 0;
+}
+
+dt {
+  margin-top: var(--spacing-unit-normal);
+}

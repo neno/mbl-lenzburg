@@ -1,0 +1,23 @@
+/**
+ * -------------------------------------------------------------------
+ * #MODAL-NAV-LIST
+ * -------------------------------------------------------------------
+ */
+
+.c-modal-nav-list {
+  width: 100%;
+}
+
+.c-modal-nav-list__item {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--white);
+
+  @media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 1024px) {
+    padding: var(--spacing-unit-normal) var(--spacing-unit-small);
+  }
+
+  @media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 736px) {
+    padding: var(--spacing-unit-small) var(--spacing-unit-small);
+  }
+}

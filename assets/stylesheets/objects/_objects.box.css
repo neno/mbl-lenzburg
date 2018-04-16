@@ -1,0 +1,44 @@
+/**
+ * -------------------------------------------------------------------
+ * #BOX
+ * -------------------------------------------------------------------
+ */
+
+.o-box {
+  lost-utility: clearfix;
+  display: block;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.o-box--link {
+  background-color: transparent;
+  transition: background-color 0.7s ease-out;
+}
+
+.o-box--link:hover {
+  background-color: var(--lightgray);
+  transition: background-color 0.3s ease-in;
+}
+
+/* Size variants */
+
+.o-box--small {
+  padding: var(--spacing-unit-normal) var(--spacing-unit-small);
+  border-bottom: 1px solid var(--darkgray);
+
+  & > :last-child {
+    border-bottom: 0;
+  }
+
+  @media (--for-tablet-landscape-up) {
+    padding-left: var(--spacing-unit-huge);
+    padding-right: var(--spacing-unit-huge);
+  }
+}
+
+.o-box--huge {
+  padding: var(--spacing-unit-normal) var(--spacing-unit-huge);
+}

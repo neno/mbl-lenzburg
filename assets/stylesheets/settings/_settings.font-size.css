@@ -1,0 +1,63 @@
+/**
+ * -------------------------------------------------------------------
+ * #FONT-SIZE
+ * -------------------------------------------------------------------
+ */
+
+:root {
+  --font-size-core-phone: 14.5px;
+  --line-height-core-phone: 1.4;
+  --font-size-core: calc(16px + (21 - 16) * (100vw - 600px) / (2560 - 600));
+  --line-height-core: 1.3;
+
+  --font-size-body: {
+    font-size: var(--font-size-core-phone);
+    line-height: var(--line-height-core-phone);
+
+    @media (--for-tablet-portrait-up) {
+      font-size: var(--font-size-core);
+      line-height: var(--line-height-core);
+    }
+  }
+
+  --font-size-small: {
+    font-size: 0.9em;
+    line-height: inherit;
+
+    @media (--for-tablet-landscape-up) {
+      font-size: 0.75em;
+    }
+  }
+
+  --font-size-h1: {
+    font-size: 2.5em;
+    line-height: 1;
+
+    @media (--for-tablet-portrait-up) {
+      font-size: 2.75em;
+    }
+
+    @media (--for-big-desktop-up) {
+      font-size: 3.25em;
+    }
+  }
+
+  --font-size-h2: {
+    font-size: 1.75em;
+    line-height: 1;
+
+    @media (--for-tablet-portrait-up) {
+      font-size: 2em;
+    }
+  }
+
+  --font-size-h3: {
+    font-size: 1em;
+    line-height: inherit;
+  }
+
+  --font-size-h4: {
+    font-size: 1em;
+    line-height: inherit;
+  }
+}

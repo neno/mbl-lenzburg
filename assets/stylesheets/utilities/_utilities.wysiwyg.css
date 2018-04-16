@@ -1,0 +1,19 @@
+/**
+ * -------------------------------------------------------------------
+ * #WYSIWYG
+ * -------------------------------------------------------------------
+ */
+
+.wysiwyg a,
+.wysiwyg a:link,
+.wysiwyg a:visited,
+.wysiwyg a:hover,
+.wysiwyg a:active,
+.wysiwyg a:focus {
+  color: var(--black);
+}
+
+.wysiwyg b,
+.wysiwyg strong {
+  @apply --font-style-body-bold;
+}

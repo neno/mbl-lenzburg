@@ -1,0 +1,33 @@
+/**
+ * -------------------------------------------------------------------
+ * #HEADINGS
+ * -------------------------------------------------------------------
+ */
+
+h1,
+.h1 {
+  @apply --font-size-h1;
+  @apply --font-style-headings;
+}
+
+h2,
+.h2 {
+  @apply --font-size-h2;
+  @apply --font-style-headings;
+}
+
+h3,
+.h3 {
+  @apply --font-size-h3;
+  @apply --font-style-body-bold;
+
+  text-transform: uppercase;
+}
+
+h4,
+.h4 {
+  @apply --font-size-h4;
+  @apply --font-style-body;
+
+  text-transform: uppercase;
+}

@@ -1,0 +1,106 @@
+/**
+ * -------------------------------------------------------------------
+ * #Text Inputs + Textarea
+ * -------------------------------------------------------------------
+ */
+
+/* Text inputs */
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.f-textarea,
+select {
+  /* General Styles */
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--input-border);
+  border-radius: 0;
+  outline: none;
+  height: var(--input-height);
+  width: 100%;
+  font-size: var(--input-font-size);
+  margin: var(--input-margin);
+  padding: var(--input-padding);
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: var(--input-transition);
+
+  /* Disabled input style */
+  &:disabled,
+  &[readonly="readonly"] {
+    color: var(--input-disabled-color);
+    border-bottom: var(--input-disabled-border);
+  }
+
+  /* Disabled label style */
+  &:disabled + label,
+  &[readonly="readonly"] + label {
+    color: var(--input-disabled-color);
+  }
+
+  /* Focused input style */
+  &:focus:not([readonly]) {
+    border-bottom: 1px solid var(--input-focus-color);
+    box-shadow: 0 1px 0 0 var(--input-focus-color);
+  }
+
+  /* Focused label style */
+  &:focus:not([readonly]) + label {
+    color: var(--input-focus-color);
+  }
+
+  /* Valid Input Style */
+  &.is-success,
+  &:focus.is-success {
+    border-bottom: 1px solid var(--input-success-color);
+    box-shadow: 0 1px 0 0 var(--input-success-color);
+  }
+
+  /* Custom Success Message */
+  &.is-success + label::after,
+  &:focus.is-success + label::after {
+    content: attr(data-success);
+    color: var(--input-success-color);
+    opacity: 1;
+  }
+
+  /* Invalid Input Style */
+  &.is-danger,
+  &:focus.is-danger {
+    border-bottom: var(--input-invalid-border);
+    box-shadow: 0 1px 0 0 var(--input-error-color);
+  }
+
+  /* Custom Error message */
+  &.is-danger + label::after,
+  &:focus.is-danger + label::after {
+    content: attr(data-error);
+    color: var(--input-error-color);
+    opacity: 1;
+  }
+
+  /* Full width label when using validate for error messages */
+  &.validate + label {
+    width: 100%;
+    pointer-events: none;
+  }
+
+  /* Form Message Shared Styles */
+  & + label::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: calc(-1 * var(--input-height) - var(--label-font-size));
+    opacity: 0;
+    transition: 0.2s opacity ease-out, 0.2s color ease-out;
+  }
+}

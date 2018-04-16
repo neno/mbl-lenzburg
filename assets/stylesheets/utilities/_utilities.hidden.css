@@ -1,0 +1,62 @@
+/**
+ * -------------------------------------------------------------------
+ * #HIDDEN
+ * -------------------------------------------------------------------
+ */
+
+.hidden-visually {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+@media (--for-phone-only) {
+
+  .is-hidden-mobile-only {
+    display: none !important;
+  }
+}
+
+@media (--for-mobile-only) {
+
+  .is-hidden-mobile-only {
+    display: none !important;
+  }
+}
+
+@media (--for-tablet-portrait-up) {
+
+  .is-hidden-tablet-portrait-up {
+    display: none !important;
+  }
+}
+
+@media (--for-tablet-landscape-up) {
+
+  .is-hidden-tablet-landscape-up {
+    display: none !important;
+  }
+}
+
+@media (--for-desktop-up) {
+
+  .is-hidden-desktop-up {
+    display: none !important;
+  }
+}
+
+@media (--for-big-desktop-up) {
+
+  .is-hidden-big-desktop-up {
+    display: none !important;
+  }
+}

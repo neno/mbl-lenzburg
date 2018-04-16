@@ -1,0 +1,53 @@
+/**
+ * -------------------------------------------------------------------
+ * #WRAPPER
+ * -------------------------------------------------------------------
+ */
+
+.o-wrapper {
+  lost-utility: clearfix;
+  margin-right: auto;
+  margin-left: auto;
+  width: var(--wrapper-width-for-phone-only);
+
+  @media (--for-tablet-portrait-up) {
+    width: var(--wrapper-width-for-tablet-portrait-up);
+  }
+
+  @media (--for-tablet-landscape-up) {
+    width: var(--wrapper-width-for-tablet-landscape-up);
+  }
+
+  @media (--for-desktop-up) {
+    width: var(--wrapper-width-for-desktop-up);
+  }
+
+  @media (--for-big-desktop-up) {
+    width: var(--wrapper-width-for-big-desktop-up);
+  }
+}
+
+.o-wrapper--tiny {
+  padding-left: var(--spacing-unit-tiny);
+  padding-right: var(--spacing-unit-tiny);
+}
+
+.o-wrapper--small {
+  padding-left: var(--spacing-unit-small);
+  padding-right: var(--spacing-unit-small);
+}
+
+.o-wrapper--normal {
+  padding-left: var(--spacing-unit-normal);
+  padding-right: var(--spacing-unit-normal);
+}
+
+.o-wrapper--large {
+  padding-left: var(--spacing-unit-large);
+  padding-right: var(--spacing-unit-large);
+}
+
+.o-wrapper--huge {
+  padding-left: var(--spacing-unit-huge);
+  padding-right: var(--spacing-unit-huge);
+}

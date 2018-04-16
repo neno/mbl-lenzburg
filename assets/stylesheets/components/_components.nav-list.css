@@ -1,0 +1,28 @@
+/**
+ * -------------------------------------------------------------------
+ * #NAV-LIST
+ * -------------------------------------------------------------------
+ */
+
+.c-nav-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+@media (--for-tablet-landscape-up) {
+
+  .c-nav-list {
+
+    & > .c-nav-list__item {
+      display: inline-block;
+    }
+
+    & > .c-nav-list__item::after {
+      content: "\00A0\00A0";
+    }
+
+    & > .c-nav-list__item:last-child::after {
+      content: "";
+    }
+  }
+}

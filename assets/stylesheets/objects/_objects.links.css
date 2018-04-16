@@ -1,0 +1,51 @@
+/**
+ * -------------------------------------------------------------------
+ * #LINKS
+ * -------------------------------------------------------------------
+ */
+
+.link,
+.link:link,
+.link:visited,
+.link:hover,
+.link:active,
+.link:focus {
+  color: var(--black);
+}
+
+.link--blank,
+.link--blank:link,
+.link--blank:visited {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.link--white,
+.link--white:link,
+.link--white:visited,
+.link--white:hover,
+.link--white:active,
+.link--white:focus {
+  color: var(--white);
+}
+
+.link--more::after {
+  float: right;
+  content: "";
+  margin-top: 0.2em;
+  margin-left: 2em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.2em;
+  background: var(--color-theme-2);
+  border-color: var(--color-theme-1);
+  transition: border-width 0.1s ease-out;
+}
+
+.link--blank:hover .link--more::after {
+  border-width: 0.3em;
+  transition: border-width 0.1s ease-in;
+}

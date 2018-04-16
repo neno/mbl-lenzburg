@@ -1,0 +1,22 @@
+/**
+ * -------------------------------------------------------------------
+ * #LIST-BARE
+ * -------------------------------------------------------------------
+ */
+
+.o-list-documents {
+  list-style: none;
+  margin-left: 0;
+}
+
+.o-list-documents__item {
+  lost-utility: clearfix;
+  display: block;
+  padding: var(--spacing-unit-small);
+  border-bottom: 1px solid var(--darkgray);
+
+  @media (--for-tablet-landscape-up) {
+    padding-left: var(--spacing-unit-huge);
+    padding-right: var(--spacing-unit-huge);
+  }
+}

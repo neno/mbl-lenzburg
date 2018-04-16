@@ -1,0 +1,49 @@
+/**
+ * -------------------------------------------------------------------
+ * #ANCHORS
+ * -------------------------------------------------------------------
+ */
+
+a {
+  /* display: inline-block; */
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: underline;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+a[href^='tel:'],
+a[href^='tel:']:link,
+a[href^='tel:']:visited {
+  text-decoration: underline;
+
+  @media (--for-tablet-landscape-up) {
+    text-decoration: none;
+  }
+}
+
+a[href^='tel:']:hover,
+a[href^='tel:']:active,
+a[href^='tel:']:focus {
+  text-decoration: none;
+}
+
+a[href^='mailto:'],
+a[href^='mailto:']:link,
+a[href^='mailto:']:visited {
+  text-decoration: underline;
+}
+
+a[href^='mailto:']:hover,
+a[href^='mailto:']:active,
+a[href^='mailto:']:focus {
+  text-decoration: none;
+}

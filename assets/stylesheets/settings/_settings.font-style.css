@@ -1,0 +1,32 @@
+/**
+ * -------------------------------------------------------------------
+ * #FONT-STYLE
+ * -------------------------------------------------------------------
+ */
+
+:root {
+  --font-style-body: {
+    font-family: Univers-Condensed, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0;
+    font-variant-ligatures: no-common-ligatures;
+  }
+
+  --font-style-body-bold: {
+    font-family: Univers-Bold-Condensed, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0;
+    font-variant-ligatures: no-common-ligatures;
+  }
+
+  --font-style-headings: {
+    font-family: Univers-Ultra-Condensed, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    font-variant-ligatures: no-common-ligatures;
+  }
+}

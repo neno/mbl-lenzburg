@@ -1,0 +1,23 @@
+/**
+ * -------------------------------------------------------------------
+ * #TEASER
+ * -------------------------------------------------------------------
+ */
+
+.c-teaser {
+  background-color: var(--color-theme-1);
+  transition: background-color 0.7s ease-out;
+
+  @media (--for-tablet-landscape-up) {
+    margin-right: var(--spacing-unit-huge);
+  }
+}
+
+.c-teaser:hover {
+  background-color: var(--color-theme-2);
+  transition: background-color 0.3s ease-in;
+}
+
+.c-teaser + .c-teaser {
+  margin-top: var(--spacing-unit-tiny);
+}

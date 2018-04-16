@@ -1,0 +1,43 @@
+/**
+ * -------------------------------------------------------------------
+ * #MEDIA
+ * -------------------------------------------------------------------
+ */
+
+.o-media {
+  lost-utility: clearfix;
+  display: block;
+  width: 100%;
+}
+
+.o-media__img--left {
+  margin-top: var(--spacing-unit-tiny);
+  margin-bottom: var(--spacing-unit-tiny);
+
+  & > img {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  @media (--for-tablet-portrait-up) {
+    float: left;
+    width: 50%;
+    margin-right: var(--spacing-unit-normal);
+  }
+}
+
+.o-media__img--right {
+  margin-top: var(--spacing-unit-tiny);
+  margin-bottom: var(--spacing-unit-tiny);
+
+  & > img {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  @media (--for-tablet-portrait-up) {
+    float: right;
+    width: 50%;
+    margin-left: var(--spacing-unit-normal);
+  }
+}

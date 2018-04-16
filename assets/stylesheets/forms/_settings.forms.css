@@ -1,0 +1,131 @@
+:root {
+  /**
+   * -------------------------------------------------------------------
+   * #FORM SETTINGS
+   * -------------------------------------------------------------------
+   */
+
+  /**
+   * Form Specific Media Queries
+   */
+
+  @custom-media --for-small-and-down only screen and (max-width: 599px);
+  @custom-media --for-medium-and-down only screen and (max-width: 992px);
+
+  /**
+   * Grid
+   */
+
+  --gutter-width: 30px;
+
+  /**
+   * Colors
+   */
+
+  --primary-color: teal;
+  --primary-color-light: green;
+  --primary-color-dark: red;
+  --secondary-color: var(--color-theme-1);
+  --success-color: green;
+  --error-color: red;
+  --link-color: blue;
+
+  /**
+   * Buttons
+   */
+
+  /* Shared styles */
+  --btn-border: none;
+  --btn-background-focus: var(--secondary-color); /* lighten(--secondary-color, 4%) */
+  --btn-font-size: 1.3rem;
+  --btn-height: 36px;
+  --btn-padding: 0 2rem;
+  --btn-radius: 2px;
+
+  /* Disabled styles */
+  --btn-disabled-background: #dfdfdf;
+  --btn-disabled-color: #9f9f9f;
+
+  /* Raised buttons */
+  --btn-raised-background: var(--secondary-color);
+  --btn-raised-background-hover: var(--btn-raised-background); /* lighten(--btn-raised-background, 5%) */
+  --btn-raised-color: #fff;
+
+  /**
+   * Text Inputs + Textarea
+   */
+  --input-height: 2.8rem;
+  --input-border-color: var(--black);
+  --input-border: 1px solid var(--input-border-color);
+  --input-background: #fff;
+  --input-error-color: var(--error-color);
+  --input-success-color: var(--success-color);
+  --input-focus-color: var(--secondary-color);
+  --input-font-size: 1rem;
+  --input-margin-bottom: 1em;
+  --input-margin: 0 0 var(--input-margin-bottom) 0;
+  --input-padding: 0;
+  --input-transition: all 0.3s;
+  --label-font-size: 0.8rem;
+  --input-disabled-color: rgba(0, 0, 0, 0.26);
+  --input-disabled-solid-color: #bdbdbd;
+  --input-disabled-border: 1px dotted var(--input-disabled-color);
+  --input-invalid-border: 1px solid var(--input-error-color);
+  --placeholder-text-color: var(--lightgray);; /* lighten($input-border-color, 20%) */
+
+  /**
+   * Radio Buttons
+   */
+  --radio-fill-color: var(--secondary-color);
+  --radio-empty-color: #5a5a5a;
+  --radio-border: 2px solid var(--radio-fill-color);
+
+  /**
+   * Range
+   */
+  --range-height: 14px;
+  --range-width: 14px;
+  --track-height: 3px;
+
+  /**
+   * Select
+   */
+  --select-border: 1px solid #f2f2f2;
+  --select-background: rgba(255, 255, 255, 0.9);
+  --select-focus: var(--secondary-color); /* 1px solid lighten(--secondary-color, 47%) */
+  --select-padding: 5px;
+  --select-radius: 2px;
+  --select-disabled-color: rgba(0, 0, 0, 0.3);
+
+  /*
+  Switches
+  --switch-bg-color: --secondary-color;
+  --switch-checked-lever-bg: desaturate(lighten(--secondary-color, 25%), 25%);
+  --switch-unchecked-bg: #F1F1F1;
+  --switch-unchecked-lever-bg: #818181;
+  --switch-radius: 15px;
+  */
+
+  /**
+   * Dropdown
+   */
+
+  --dropdown-bg-color: #fff;
+  --dropdown-hover-bg-color: #eee;
+  --dropdown-color: var(--secondary-color);
+  --dropdown-item-height: 50px;
+
+  --arrow: {
+    border: 2px solid var(--input-border-color);
+    border-right: 0;
+    border-top: 0;
+    content: " ";
+    display: block;
+    height: 0.5em;
+    pointer-events: none;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 0.5em;
+  }
+
+}

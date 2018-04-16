@@ -1,0 +1,21 @@
+/**
+ * -------------------------------------------------------------------
+ * #FONT-STYLE
+ * -------------------------------------------------------------------
+ */
+
+strong,
+b {
+  @apply --font-style-body-bold;
+
+  text-transform: uppercase;
+}
+
+small,
+.small {
+  @apply --font-size-small;
+}
+
+address {
+  @apply --font-style-body;
+}

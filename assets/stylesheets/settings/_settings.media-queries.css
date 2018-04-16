@@ -1,0 +1,12 @@
+/**
+ * -------------------------------------------------------------------
+ * #MEDIE-QUERIES
+ * -------------------------------------------------------------------
+ */
+
+@custom-media --for-phone-only screen and (max-width: 599px);
+@custom-media --for-mobile-only screen and (max-width: 899px);
+@custom-media --for-tablet-portrait-up screen and (min-width: 600px);
+@custom-media --for-tablet-landscape-up screen and (min-width: 900px);
+@custom-media --for-desktop-up screen and (min-width: 1200px);
+@custom-media --for-big-desktop-up screen and (min-width: 1800px);

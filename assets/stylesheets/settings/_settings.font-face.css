@@ -1,0 +1,32 @@
+/**
+ * -------------------------------------------------------------------
+ * #FONTFACE
+ * -------------------------------------------------------------------
+ */
+
+@font-face {
+  font-family: 'Univers-Condensed';
+  src:
+    url('/assets/fonts/723821/1eaf27c0-f4de-4273-9f4c-1b3236ad2f3c.woff') format('woff'),
+    url('/assets/fonts/723821/9b913baf-b1f0-47d2-8c76-42f59650058f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers-Ultra-Condensed';
+  src:
+    url('/assets/fonts/723824/7cc7234f-05ac-4109-8b8a-93f13c489739.woff') format('woff'),
+    url('/assets/fonts/723824/6c4a7455-816a-41fb-8c03-dd71dcbbc686.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers-Bold-Condensed';
+  src:
+    url('/assets/fonts/723833/21decb60-b395-4de2-bd04-e38eb2a56d2f.woff') format('woff'),
+    url('/assets/fonts/723833/091058d4-36b2-43f6-80d3-16c88e098061.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

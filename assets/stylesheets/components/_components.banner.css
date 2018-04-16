@@ -1,0 +1,71 @@
+/**
+ * -------------------------------------------------------------------
+ * #BANNER
+ * -------------------------------------------------------------------
+ */
+
+.c-banner {
+  lost-utility: clearfix;
+  position: relative;
+  margin-right: var(--spacing-unit-large);
+  margin-bottom: var(--spacing-unit-huge);
+
+  @media (--for-tablet-landscape-up) {
+    margin-right: var(--spacing-unit-huge);
+  }
+}
+
+.c-banner__visual {
+  lost-utility: clearfix;
+  position: relative;
+  float: left;
+  width: 45%;
+
+  @media (--for-tablet-portrait-up) {
+    width: 30%;
+  }
+
+  @media (--for-tablet-landscape-up) {
+    width: 60%;
+  }
+
+  @media (--for-desktop-up) {
+    width: 50%;
+  }
+
+  @media (--for-big-desktop-up) {
+    width: 60%;
+  }
+
+  @media screen and (orientation: landscape) and (max-width: 736px) {
+    width: 20%;
+  }
+}
+
+.c-banner__logo {
+  lost-utility: clearfix;
+  position: relative;
+  float: right;
+  margin-top: var(--spacing-unit-large);
+  width: 45%;
+
+  @media (--for-tablet-portrait-up) {
+    width: 30%;
+  }
+
+  @media (--for-tablet-landscape-up) {
+    width: 23%;
+  }
+
+  @media (--for-desktop-up) {
+    width: 25%;
+  }
+
+  @media (--for-big-desktop-up) {
+    width: 20%;
+  }
+
+  @media screen and (orientation: landscape) and (max-width: 736px) {
+    width: 35%;
+  }
+}

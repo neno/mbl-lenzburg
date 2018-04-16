@@ -1,0 +1,28 @@
+/**
+ * -------------------------------------------------------------------
+ * #LIST-DELIMITED
+ * -------------------------------------------------------------------
+ */
+
+.o-list-delimited {
+  margin-left: 0;
+  list-style: none;
+}
+
+@media (--for-tablet-landscape-up) {
+
+  .o-list-delimited {
+
+    & > .o-list-delimited__item {
+      display: inline-block;
+    }
+
+    & > .o-list-delimited__item::after {
+      content: ",";
+    }
+
+    & > .o-list-delimited__item:last-child::after {
+      content: "";
+    }
+  }
+}

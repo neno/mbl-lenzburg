@@ -1,0 +1,33 @@
+/**
+ * ------------------------------------------------------------------
+ * #SHARED
+ * ------------------------------------------------------------------
+ */
+
+p,
+dl,
+ol,
+ul,
+img,
+figcaption,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+address,
+blockquote,
+pre,
+hr,
+table,
+fieldset {
+  margin-bottom: var(--spacing-unit-normal);
+}
+
+dl,
+ol,
+ul {
+  margin-left: var(--spacing-unit-normal);
+}

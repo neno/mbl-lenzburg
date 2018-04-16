@@ -1,0 +1,20 @@
+/**
+ * ----------------------------------------------------------------
+ *   #COLORS
+ * ----------------------------------------------------------------
+ */
+
+:root {
+  --white: #fdfdfd;
+  --lightgray: #f2f2f2;
+  --gray: #cbcbcb;
+  --darkgray: #888;
+  --black: #1e1e1e;
+  --color-theme-1: #d66d3c;
+  --color-theme-2: #f0c76c;
+  --modal-bg: var(--color-theme-1);
+  --hamburger-bg: var(--color-theme-2);
+  --hamburger-bg-enter: var(--color-theme-2);
+  --hamburger-bg-active: var(--color-theme-2);
+  --hamburger-bg-enter-active: var(--color-theme-2);
+}

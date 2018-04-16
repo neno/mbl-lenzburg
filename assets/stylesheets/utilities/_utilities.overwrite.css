@@ -1,0 +1,26 @@
+/**
+ * -------------------------------------------------------------------
+ * #OVERWRITE
+ * -------------------------------------------------------------------
+ */
+
+.color-teaser-h2 h2 {
+  color: var(--color-theme-1);
+}
+
+.index .c-teaser,
+.impressionen_2020_galerie .c-teaser,
+.impressionen_2019_galerie .c-teaser,
+.impressionen_2018_galerie .c-teaser,
+.impressionen_2017_galerie .c-teaser,
+.impressionen_2016_galerie .c-teaser,
+.impressionen_2015_galerie .c-teaser,
+.impressionen_2014_galerie .c-teaser,
+.impressionen_2013_galerie .c-teaser,
+.impressionen_2012_galerie .c-teaser,
+.impressionen_2011_galerie .c-teaser,
+.impressionen_2010_galerie .c-teaser {
+  @media (--for-tablet-landscape-up) {
+    margin-right: 0;
+  }
+}

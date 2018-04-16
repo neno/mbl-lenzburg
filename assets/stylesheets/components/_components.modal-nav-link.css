@@ -1,0 +1,21 @@
+/**
+ * -------------------------------------------------------------------
+ * #MODAL-NAV-LINK
+ * -------------------------------------------------------------------
+ */
+
+.c-modal-nav-link,
+.c-modal-nav-link:link,
+.c-modal-nav-link:visited {
+  @apply --font-size-h2;
+  @apply --font-style-headings;
+
+  color: var(--white);
+  text-decoration: none;
+}
+
+.c-modal-nav-link.is-active,
+.c-modal-nav-link:hover,
+.c-modal-nav-link:focus {
+  color: var(--white);
+}

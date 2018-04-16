@@ -1,0 +1,20 @@
+/**
+ * -------------------------------------------------------------------
+ * #MENU-CONTAINER
+ * -------------------------------------------------------------------
+ */
+
+.c-menu {
+  position: fixed;
+  z-index: 2500;
+  left: calc(50% - var(--icon-half-width));
+  bottom: var(--spacing-unit-normal);
+
+  @media (--for-tablet-portrait-up) {
+    bottom: var(--spacing-unit-huge);
+  }
+}
+
+.has-overlay .c-menu {
+  position: fixed;
+}

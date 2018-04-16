@@ -1,0 +1,20 @@
+/**
+ * -------------------------------------------------------------------
+ * #PAGE
+ * -------------------------------------------------------------------
+ */
+
+html {
+  overflow-y: scroll;
+  min-height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+html,
+.p {
+  @apply --font-size-body;
+  @apply --font-style-body;
+}

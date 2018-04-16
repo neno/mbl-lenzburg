@@ -1,0 +1,18 @@
+/**
+ * -------------------------------------------------------------------
+ * #SITE-FOOTER
+ * -------------------------------------------------------------------
+ */
+
+.site-footer {
+  margin-top: var(--spacing-unit-huge);
+  margin-bottom: var(--spacing-unit-huge);
+
+  @media (--for-tablet-landscape-up) {
+    margin-top: calc(var(--spacing-unit-huge) - var(--spacing-unit-normal));
+    margin-bottom: 0;
+    padding-top: var(--spacing-unit-normal);
+    padding-bottom: var(--spacing-unit-normal);
+    background: var(--lightgray);
+  }
+}

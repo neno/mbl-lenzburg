@@ -1,0 +1,54 @@
+/**
+ * -------------------------------------------------------------------
+ * #FORM-LAYOUT
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * SETTINGS
+ */
+
+.f-row {
+  display: flex;
+}
+
+.f-row__col {
+  margin-right: 0.75rem;
+  flex: none;
+}
+
+.f-row__col:last-child {
+  margin-right: 0;
+}
+
+.f-row__col.w-40 {
+  width: 40%;
+}
+
+.f-row__col.w-60 {
+  width: calc(60% - 0.75rem);
+}
+
+.inline-label {
+  height: var(--input-height);
+  display: inline-block;
+  font-size: var(--input-font-size);
+  box-shadow: none;
+  box-sizing: content-box;
+  vertical-align: middle;
+
+  /* Inline styles */
+  & > span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+  }
+}
+
+.inline-label.is-disabled {
+  color: var(--input-disabled-color);
+}
+
+.inline-label.is-danger {
+  color: var(--error-color);
+}

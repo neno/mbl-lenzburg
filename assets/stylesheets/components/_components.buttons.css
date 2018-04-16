@@ -1,0 +1,48 @@
+/**
+ * -------------------------------------------------------------------
+ * #BUTTONS
+ * -------------------------------------------------------------------
+ */
+
+.c-btn {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin: 0; /* [4] */
+  cursor: pointer; /* [5] */
+  padding: var(--spacing-unit-small) var(--spacing-unit-normal);
+  transition: 0.3s;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+}
+
+/* Style variants */
+
+.c-btn--primary {
+  background-color: var(--color-theme-1);
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; /* [4] */
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-theme-2);
+  }
+
+}
+
+/* Size variants */
+
+.c-btn--small {
+  padding: var(--spacing-unit-tiny) var(--spacing-unit-small);
+}
+
+.c-btn--large {
+  padding: var(--spacing-unit-normal) var(--spacing-unit-large);
+}

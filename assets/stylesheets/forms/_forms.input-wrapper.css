@@ -1,0 +1,54 @@
+/**
+ * -------------------------------------------------------------------
+ * #INPUT-WRAPPER
+ * -------------------------------------------------------------------
+ */
+
+/* Styling for input field wrapper */
+.input-field,
+.select-field {
+  position: relative;
+  margin-top: 1.5rem;
+
+  /* Inline styles */
+  &.inline {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: 0;
+
+    & input,
+    & .select-dropdown {
+      margin-bottom: 1rem;
+    }
+  }
+
+  /* Gutter spacing */
+
+  /*
+  &.col {
+
+    & label {
+      left: calc(var(--gutter-width) / 2);
+    }
+
+    & .prefix ~ label,
+    & .prefix ~ .validate ~ label {
+      width: calc(100% - 3rem - var(--gutter-width));
+    }
+  }
+  */
+
+  & label {
+    color: var(--input-border-color);
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    cursor: text;
+    transition: 0.2s ease-out;
+
+    &:not(.label-icon).active {
+      transform: translateY(-140%);
+    }
+  }
+}

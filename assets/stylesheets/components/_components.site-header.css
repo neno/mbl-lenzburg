@@ -1,0 +1,13 @@
+/**
+ * -------------------------------------------------------------------
+ * #SITE-HEADER
+ * -------------------------------------------------------------------
+ */
+
+.site-header {
+  @media (--for-tablet-landscape-up) {
+    padding-bottom: var(--spacing-unit-small);
+    border-bottom: 1px solid var(--darkgray);
+    margin-bottom: var(--spacing-unit-huge);
+  }
+}

@@ -1,0 +1,32 @@
+/**
+ * -------------------------------------------------------------------
+ * #ARTICLE
+ * -------------------------------------------------------------------
+ */
+
+.c-article {
+  lost-utility: clearfix;
+}
+
+.c-article__header,
+.c-article__body,
+.c-article__img figcaption,
+.c-article__footer {
+  padding-left: var(--spacing-unit-huge);
+  padding-right: var(--spacing-unit-huge);
+}
+
+.c-article__list-header,
+.c-article__list-body {
+  padding-left: var(--spacing-unit-large);
+  padding-right: var(--spacing-unit-large);
+
+  @media (--for-tablet-landscape-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.c-article__list-footer {
+  margin-bottom: var(--spacing-unit-normal);
+}

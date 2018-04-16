@@ -1,0 +1,61 @@
+/**
+ * -------------------------------------------------------------------
+ * #FORM-RESETS
+ * -------------------------------------------------------------------
+ */
+
+/* Remove Focus Boxes */
+select:focus {
+  outline: var(--select-focus);
+}
+
+button:focus {
+  outline: none;
+  background-color: var(--btn-background-focus);
+}
+
+/* Reset inputs */
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+label {
+  font-size: var(--label-font-size);
+}
+
+fieldset {
+  padding-bottom: var(--spacing-unit-normal);
+  border: 0;
+}
+
+.fieldset + .fieldset {
+  padding-top: var(--spacing-unit-normal);
+  border-top: 1px solid var(--darkgray);
+}
+
+form p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+form p:last-child {
+  margin-bottom: 0;
+}
+
+/* Style Placeholders */
+::-webkit-input-placeholder {
+  color: var(--placeholder-text-color);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: var(--placeholder-text-color);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: var(--placeholder-text-color);
+}
+
+:-ms-input-placeholder {
+  color: var(--placeholder-text-color);
+}

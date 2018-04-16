@@ -1,0 +1,25 @@
+/**
+ * -------------------------------------------------------------------
+ * #LIST-INLINE
+ * -------------------------------------------------------------------
+ */
+
+.o-list-inline {
+  margin-left: 0;
+  list-style: none;
+}
+
+.o-list-inline__item {
+  display: inline-block;
+}
+
+.o-list-inline--archive {
+
+  & > .o-list-inline__item::after {
+    content: "\00A0";
+  }
+
+  & > .o-list-inline__item:last-child::after {
+    content: "";
+  }
+}

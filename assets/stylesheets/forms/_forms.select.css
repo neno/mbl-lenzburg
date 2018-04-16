@@ -1,0 +1,68 @@
+/**
+ * -------------------------------------------------------------------
+ * #Select Field
+ * -------------------------------------------------------------------
+ */
+
+.select-field {
+  position: relative;
+
+  &::after {
+    @apply --arrow;
+
+    top: 50%;
+    margin-top: -0.75em;
+    right: 0.5em;
+    z-index: 4;
+  }
+
+  & select {
+    /* @apply input; */
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--input-border-color);
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &[disabled]:hover {
+      border-color: var(--input-disabled-color);
+    }
+  }
+
+  /* States */
+  &:hover {
+    &::after {
+      border-color: var(--input-focus-color);
+    }
+  }
+
+  /* Modifiers */
+  &.is-disabled {
+    &::after {
+      border-color: var(--input-disabled-border);
+    }
+  }
+
+  &.is-fullwidth {
+    width: 100%;
+
+    & select {
+      width: 100%;
+    }
+  }
+
+  &.is-loading {
+    &::after {
+      /* @apply loader; */
+      margin-top: 0;
+      position: absolute;
+      right: 0.625em;
+      top: 0.625em;
+      transform: none;
+    }
+  }
+}

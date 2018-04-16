@@ -1,0 +1,13 @@
+/**
+ * ------------------------------------------------------------------
+ *   #WRAPPER
+ * ------------------------------------------------------------------
+ */
+
+:root {
+  --wrapper-width-for-phone-only: 100%;
+  --wrapper-width-for-tablet-portrait-up: 100%;
+  --wrapper-width-for-tablet-landscape-up: 94%;
+  --wrapper-width-for-desktop-up: 80%;
+  --wrapper-width-for-big-desktop-up: 1560px;
+}
