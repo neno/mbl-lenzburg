@@ -13,7 +13,7 @@
           <p class="h3 u-mb-0">
             Zur Bildgalerie
           </p>
-          <GalleryTeaser :images="images" />
+          <GalleryTeaser :year="activeCategory.year" />
         </nuxt-link>
         <div class="c-article__list-body">
           <ul class="o-list-bare color-teaser-h2">
@@ -50,18 +50,14 @@ export default {
     activeCategory() {
       return this.$store.getters.activeCategory || {};
     },
-    images() {
-      const year = this.activeCategory.year;
-      const gallery = this.$store.getters.galleries[year];
-      return gallery.images.splice(0, 6);
-    },
     galleryLink() {
-      return `/impressionen/${this.activeCategory.year}/galerie`;
+      return `/impressionen/${this.activeCategory.year}`;
     }
   },
   head() {
     return {
-      title: 'Programm - MBL-Lenzburg'
+      title:
+        'Programm - Musikalische Begegnungen Lenzburg – Klassik Festival in Lenzburg Aargau'
     };
   }
 };

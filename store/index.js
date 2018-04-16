@@ -115,7 +115,7 @@ const createStore = () => {
               const team = buildTeam(resTeam.items);
               vuexContext.commit('setTeam', team);
 
-              // console.log(resTeam.items[0].fields);
+              // console.log(resGalleries.items[7].fields);
             }
           )
           .catch(console.error);

@@ -9,9 +9,14 @@
             </h1>
           </header>
           <div class="c-article__body">
-            <ul class="o-list-bare o-layout l-cols-galery">
+            <ul v-if="images" class="o-list-bare o-layout l-cols-galery">
               <li class="o-layout__item" v-for="image in images" :key="image.imageUrl">
-                <img :src="image.imageUrl" :alt="image.title" class="u-mt-normal u-mb-tiny">
+                <figure>
+                  <img :src="image.imageUrl" :alt="image.title" class="u-mt-normal u-mb-tiny">
+                  <figcaption class="u-mb-0">
+                    {{image.title}}
+                  </figcaption>
+                </figure>
               </li>
             </ul>
           </div>

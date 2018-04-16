@@ -10,7 +10,7 @@
         <div class="c-article__body">
           <h2>{{team.title}}</h2>
           <p v-if="team.lead">{{team.lead}}</p>
-          <div v-if="team.copy">{{team.copy}}</div>
+          <div v-if="team.copy" class="u-mb-normal">{{team.copy}}</div>
           <figure v-if="team.imageUrl" class="c-article__img">
             <img :src="team.imageUrl" :alt="team.imageAlt" class="u-mb-tiny">
             <figcaption></figcaption>

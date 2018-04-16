@@ -9,9 +9,21 @@
 <script>
 export default {
   props: {
-    images: {
-      type: Array,
+    // images: {
+    //   type: Array,
+    //   required: true
+    // }
+    year: {
+      type: String,
       required: true
+    }
+  },
+  computed: {
+    images() {
+      const gallery = this.$store.getters.galleries[this.year];
+      if (gallery) {
+        return gallery.images.slice(0, 6);
+      }
     }
   }
 };

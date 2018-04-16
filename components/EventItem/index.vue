@@ -1,6 +1,6 @@
 <template>
   <article>
-    <nuxt-link :to="event.slug" class="o-box o-box--link o-box--small link--blank">
+    <nuxt-link :to="event.slug" append class="o-box o-box--link o-box--small link--blank">
       <ul class="o-list-delimited h3 u-mb-tiny">
         <li class="o-list-delimited__item">{{eventDate}}</li>&nbsp;
         <li class="o-list-delimited__item">{{eventTime}} Uhr</li>&nbsp;
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import { formattedDate, formattedTime } from '~/lib/dateTime.js';
 export default {
   props: {
     event: {
@@ -21,22 +22,11 @@ export default {
     }
   },
   computed: {
-    dateFrom() {
-      return new Date(this.event.dateFrom);
-    },
     eventDate() {
-      const options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      };
-      return this.dateFrom.toLocaleDateString('de-DE', options);
+      return formattedDate(this.event.dateFrom);
     },
     eventTime() {
-      const hours = this.dateFrom.getHours();
-      const minutes = this.dateFrom.getMinutes() || '00';
-      return `${hours}:${minutes}`;
+      return formattedTime(this.event.dateFrom);
     }
   }
 };

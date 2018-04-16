@@ -9,22 +9,21 @@
             </h1>
           </div>
         </header>
-        <div class="c-article__list-body">
+        <div
+          v-for="category in categories"
+          :key="category.slug"
+        >
           <nuxt-link
-            v-for="category in categories"
-            :key="category.slug"
             :to="getGalleryLink(category.year)"
             class="o-box o-box--link o-box--small link--blank"
           >
-            <article>
-              <h2 class="u-mb-tiny">
-                {{category.title}}
-              </h2>
-              <p class="u-mb-small">
-                {{category.lead}}
-              </p>
-              <GalleryTeaser :year="category.year" />
-            </article>
+            <h2 class="u-mb-tiny">
+              {{category.title}}
+            </h2>
+            <p class="u-mb-small">
+              {{category.lead}}
+            </p>
+            <GalleryTeaser :year="category.year" />
           </nuxt-link>
         </div>
       </div>
